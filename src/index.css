@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 10%;
+    --foreground: 180 20% 98%;
+
+    --card: 220 20% 14%;
+    --card-foreground: 180 20% 98%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 180 20% 98%;
+
+    --primary: 160 70% 50%;
+    --primary-foreground: 220 25% 10%;
+    --primary-glow: 160 80% 60%;
+
+    --secondary: 200 70% 50%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 180 10% 70%;
+
+    --accent: 45 90% 60%;
+    --accent-foreground: 220 25% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 160 70% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(160 70% 50%), hsl(200 70% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(160 70% 50% / 0.1), hsl(200 70% 50% / 0.1));
+    --gradient-card: linear-gradient(135deg, hsl(220 20% 14%), hsl(220 20% 18%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(160 70% 50% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(160 70% 50% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    /* Ini perbaikan dari error sebelumnya */
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    /* --- INI ADALAH PERBAIKAN UNTUK ERROR BARU --- */
+    /* Hapus baris @apply yang error */
+    /* @apply bg-background text-foreground; */
+
+    /* Ganti dengan variabel CSS langsung */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
