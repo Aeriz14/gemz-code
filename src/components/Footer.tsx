@@ -6,7 +6,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/Aeriz14", label: "GitHub" },
-    { icon: Instagram, href: "https://www.instagram.com/gegem____", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/gemzcode.studio", label: "Instagram" },
     { icon: Smartphone, href: "https://wa.me/6289653970930", label: "Smartphone" },
     { icon: Mail, href: "mailto:gemzcode@gmail.com", label: "Email" }
   ];
