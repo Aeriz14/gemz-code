@@ -21,8 +21,8 @@ const Contact = () => {
     {
       icon: <Instagram className="w-8 h-8 text-primary" />,
       title: "Instagram",
-      username: "@gegem____",
-      href: "https://www.instagram.com/gegem____",
+      username: "@gemzcode.studio",
+      href: "https://www.instagram.com/gemzcode.studio",
     },
     {
       icon: <Github className="w-8 h-8 text-primary" />,
